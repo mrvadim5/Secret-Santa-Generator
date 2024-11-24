@@ -1,8 +1,6 @@
 '''
 
-Secret Santa Program
-
-By: Monique Cheng
+Jolabokaflod Generator by mrvadim5
 
 '''
 import re
@@ -14,11 +12,10 @@ sender_pass = 'password'
 names = []
 emails = []
 recipient = []
-budget = 50
 
 count = 0
 
-print("""Welcome to the secret santa decision-maker!
+print("""Welcome to the Jolabokaflod Generator!
 How would you like to enter the information?
      1. give a text (.txt) file with format of:
          name, email address
@@ -132,9 +129,8 @@ for i in range(0, count):
     # the message which will be sent in the email
     mail_content = f'''Hello {names[i]},
     
-You are the secret santa of {recipient[i]}!
-    
-Remember the budget is ${budget}
+You are the Jolabokafloder of {recipient[i]}!
+
     '''
     
     # sets the email address the email will be sent to
